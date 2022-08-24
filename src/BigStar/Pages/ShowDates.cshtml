@@ -1,4 +1,18 @@
 ﻿@page
 @model MyApp.Namespace.ShowDatesModel
 @{
+  var startingDate = new DateOnly(year: 2023, month: 5, day: 29);
 }
+<h1>Inline code for dates</h1>
+
+<p>Starting date: @startingDate</p>
+<h3>Sale Dates</h3>
+<ul>
+  @for (int counter = 0; counter < 5; counter++)
+  {
+    <li>
+      @startingDate.AddDays(counter * 3).ToLongDateString()
+    </li>
+  }
+
+</ul>
