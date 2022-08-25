@@ -6,5 +6,8 @@
 <h2>This months sale dates</h2>
 
 <ul>
-
+  @foreach (DateOnly theDate in Model.SaleDates)
+  {
+    <li>@theDate.ToLongDateString()</li>
+  }
 </ul>
