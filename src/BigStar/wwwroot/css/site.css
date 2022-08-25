@@ -16,3 +16,25 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.card-grid {
+	display: grid;
+	width: 400px;
+	grid-template-columns: auto auto;
+	grid-template-rows: repeat(6, 1fr);
+	border: solid gray 1px;
+
+}
+
+.caption {
+	background: lightblue;
+	border-right: solid gray 1px;
+	border-bottom: solid gray 1px;
+}
+
+.value {
+	background-color: lavender;
+	border-right: solid gray 1px;
+	border-bottom: solid gray 1px;
+
+}
