@@ -3,10 +3,19 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BigStar.Pages.Binding
 {
-    public class ToQueryStringModel : PageModel
+  [BindProperties(SupportsGet = true)]
+  public class ToQueryStringModel : PageModel
+  {
+
+    public string CardName { get; set; }
+    public decimal? OriginalPrice { get; set; }
+    public void OnGet()
     {
-        public void OnGet()
-        {
-        }
+      if (string.IsNullOrWhiteSpace(CardName))
+      {
+
+        CardName = "No CardName found!";
+      }
     }
+  }
 }
