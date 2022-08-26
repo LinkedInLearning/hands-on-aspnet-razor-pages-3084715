@@ -1,19 +1,19 @@
-﻿@page
+﻿@page "/{OriginalPrice}/Demo/{CardName}"
 @model BigStar.Pages.Binding.ToRouteModel
 @{
 }
 
 <div class="card-grid">
-	<div class="caption">
-		Card Name:
-	</div>
-	<div class="value">
-		@Model.CardName
-	</div>
-	<div class="caption">
-		Original Price:
-	</div>
-	<div class="value">
-		@Model.OriginalPrice
-	</div>
+  <div class="caption">
+    Card Name:
+  </div>
+  <div class="value">
+    @Model.CardName
+  </div>
+  <div class="caption">
+    Original Price:
+  </div>
+  <div class="value">
+    @Model.OriginalPrice
+  </div>
 </div>
