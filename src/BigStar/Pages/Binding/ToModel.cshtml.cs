@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace BigStar.Pages.Binding
 {
+	[BindProperties(SupportsGet = true)]
 	public class ToModelModel : PageModel
 	{
 		public string CardName { get; set; }
