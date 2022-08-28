@@ -8,6 +8,7 @@ namespace BigStar.Pages.Binding
   public class ToMethodModel : PageModel
   {
 
+    public string Message { get; set; } = "No message.";
     public void OnGet()
     {
     }
