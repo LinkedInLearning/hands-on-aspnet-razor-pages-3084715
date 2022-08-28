@@ -9,8 +9,9 @@ namespace BigStar.Pages.Binding
   {
 
     public string Message { get; set; } = "No message.";
-    public void OnGet()
+    public void OnGet(BigStar.Models.CollectibleCard currentCard)
     {
+      Message = $"This {currentCard.CardName} card is in {currentCard.Condition} condition";
     }
   }
 }
