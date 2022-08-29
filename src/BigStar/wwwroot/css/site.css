@@ -99,6 +99,7 @@ input:focus {
 	}
 
 	input,
+	div,
 	button {
 		grid-column: 2 / 3;
 	}
