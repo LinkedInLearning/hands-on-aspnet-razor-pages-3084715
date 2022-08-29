@@ -1,20 +1,20 @@
 html {
-  font-size: 14px;
+	font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+	html {
+		font-size: 16px;
+	}
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+	position: relative;
+	min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .card-grid {
@@ -37,4 +37,69 @@ body {
 	border-right: solid gray 1px;
 	border-bottom: solid gray 1px;
 
+}
+
+form {
+	display: grid;
+	padding: 1em;
+	background: rgb(214, 214, 243);
+	border: 3px solid #c1c1c1;
+
+	max-width: 600px;
+	padding: 1em;
+}
+
+form input {
+	background: #fff;
+	border: 1px solid #9c9c9c;
+}
+
+form button {
+	background: rgb(198, 246, 252);
+	padding: 0.7em;
+	width: 100%;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+form button:hover {
+	background: gold;
+}
+
+form div {
+	background-color: lavender;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	border: 6px double rgb(143, 143, 188);
+	margin-top: 3em;
+}
+
+label {
+	padding: 0.5em 0.5em 0.5em 0;
+	font-weight: 600;
+}
+
+input {
+	padding: 0.4em;
+	margin-bottom: 0.5rem;
+}
+
+input:focus {
+	outline: 3px solid gold;
+}
+
+@media(min-width: 400px) {
+	form {
+		grid-template-columns: 200px 1fr;
+		grid-gap: 10px;
+	}
+
+	label {
+		text-align: right;
+		grid-column: 1 / 2;
+	}
+
+	input,
+	button {
+		grid-column: 2 / 3;
+	}
 }
