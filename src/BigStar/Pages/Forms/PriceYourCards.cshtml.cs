@@ -27,9 +27,9 @@ namespace BigStar.Pages.Forms
 			SetupLists();
 
 			// var offerPrice = 12.50 * Card.CardCount;
-			var newCard = new CardSource().CollectibleCards.Where(x => x.CardName == CardName).First();
+
 			var offerPrice = CardSource.GetOfferPrice(CardName, Condition.Good);
-			Message = $"Our offer for {Card.CardCount} {newCard.CardName} card(s) in {Card.Condition} condition = {(offerPrice):C} USD ";
+			Message = $"Our offer for {Card.CardCount} {CardName} card(s) in {Card.Condition} condition = {(offerPrice):C} USD ";
 		}
 	}
 }
