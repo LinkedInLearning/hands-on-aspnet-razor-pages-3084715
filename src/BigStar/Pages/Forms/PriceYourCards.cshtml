@@ -4,10 +4,10 @@
 }
 
 <form method="post">
-	<label>How many cards??</label>
+	<label asp-for="Card.CardCount"></label>
 	<input type="number" asp-for="Card.CardCount" />
 
-	<label>Card Name?</label>
+	<label asp-for="Card.CardName"></label>
 	<input type="text" asp-for="Card.CardName" />
 
 	<button>Get the price offer!</button>
