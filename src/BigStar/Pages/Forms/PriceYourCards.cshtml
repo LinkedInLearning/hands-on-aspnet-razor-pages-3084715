@@ -7,8 +7,18 @@
 	<label asp-for="Card.CardCount"></label>
 	<input type="number" asp-for="Card.CardCount" />
 
-	<label asp-for="Card.CardName"></label>
-	<input type="text" asp-for="Card.CardName" />
+	@* <label asp-for="Card.CardName"></label>
+		<input type="text" asp-for="Card.CardName" /> *@
+
+	<label>Card</label>
+	<select>
+		<option>Select Card</option>
+	</select>
+
+	<label>Condition</label>
+	<select>
+		<option>Select Condition</option>
+	</select>
 
 	<button>Get the price offer!</button>
 
