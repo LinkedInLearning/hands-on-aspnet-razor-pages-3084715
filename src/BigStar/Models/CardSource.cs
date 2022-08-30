@@ -112,14 +112,24 @@ namespace BigStar.Models
 				return _cards.OrderBy(x => x.CardName).ToList();
 			}
 		}
-		public static Decimal GetOfferPrice(CollectibleCard card, Condition cn) => cn switch
+		public static Decimal GetOfferPrice(string cardName, Condition currentCondition)
 		{
-			Condition.Mint => card.AskingPrice,
-			Condition.Good => card.AskingPrice * .8M,
-			Condition.Played => card.AskingPrice * .5M,
-			Condition.Poor => card.AskingPrice * .15M,
-			_ => 0
 
-		};
+			var currentCard = new CardSource().CollectibleCards
+																				.Where(x => x.CardName == cardName)
+																				.First();
+			decimal offer = currentCondition switch
+			{
+
+				Condition.Mint => currentCard.AskingPrice,
+				Condition.Good => currentCard.AskingPrice * .8M,
+				Condition.Played => currentCard.AskingPrice * .5M,
+				Condition.Poor => currentCard.AskingPrice * .15M,
+				_ => 0
+			};
+			return offer;
+
+
+		}
 	}
 }
