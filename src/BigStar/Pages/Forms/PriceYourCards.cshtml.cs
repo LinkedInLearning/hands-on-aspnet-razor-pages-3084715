@@ -17,7 +17,7 @@ namespace BigStar.Pages.Forms
 
 
 			var offerPrice = 12.50 * Card.CardCount;
-			Message = $"Our offer for {Card.CardCount} {Card.CardName} card(s) in {Condition.Good} condition = {(offerPrice):C} USD ";
+			Message = $"Our offer for {Card.CardCount} {Card.CardName} card(s) in {Card.Condition} condition = {(offerPrice):C} USD ";
 		}
 	}
 }
