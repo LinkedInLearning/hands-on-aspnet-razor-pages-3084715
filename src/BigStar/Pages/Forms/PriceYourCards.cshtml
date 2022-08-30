@@ -4,16 +4,16 @@
 }
 
 <form method="post">
-  <label>How many cards?</label>
-  <input type="number" />
+	<label>How many cards??</label>
+	<input type="number" asp-for="Card.CardCount" />
 
-  <label>Card Name?</label>
-  <input type="text" />
+	<label>Card Name?</label>
+	<input type="text" asp-for="Card.CardName" />
 
-  <button>Get the price offer!</button>
+	<button>Get the price offer!</button>
 
-  <div>
-    Message goes here.
-  </div>
+	<div>
+		@Model.Message
+	</div>
 
 </form>
