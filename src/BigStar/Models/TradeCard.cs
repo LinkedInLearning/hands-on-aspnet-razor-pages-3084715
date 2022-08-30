@@ -5,6 +5,6 @@ namespace BigStar.Models
 	{
 		public int CardCount { get; set; } = 1;
 		public string CardName { get; set; }
-		public string Condition { get; set; } = "Mint";
+		public Condition Condition { get; set; } = Condition.Mint;
 	}
 }
