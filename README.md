@@ -1,7 +1,7 @@
 # Hands-On Introduction: ASP.NET Razor Pages 
 This is the repository for the LinkedIn Learning course Hands-On Introduction: ASP.NET Razor Pages . The full course is available from [LinkedIn Learning][lil-course-url].
 
-![Hands-On Introduction: ASP.NET Razor Pages ][lil-thumbnail-url]
+![1666989714836](https://user-images.githubusercontent.com/28540243/200746773-01791336-8e7b-4a70-a78e-35091df8d27b.jpeg)
 
 Looking to get up to speed with ASP.NET? In this practical course, which was designed with experienced web developers in mind, learn how to create an ASP.NET app using Razor Pages. Instructor Walt Ritscher covers what you need to know to build dynamic, data-driven content with Razor Pages, including how to connect pages to data sources, use parameters to customize data queries, and leverage TagHelpers—HTML attributes that automate the creation of dynamic content.<br><br>The best way to learn a language or framework is to use it in practice. That’s why this course is integrated with GitHub Codespaces, an instant cloud developer environment that offers all the functionality of your favorite IDE without the need for any local machine setup. With GitHub Codespaces, you can get hands-on practice from any machine, at any time—all while using a tool that you’ll likely encounter in the workplace. Check out the [Using GitHub Codespaces with this course][gcs-video-url] video to learn how to get started.
 
